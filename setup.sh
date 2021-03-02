@@ -25,3 +25,7 @@ go get -u github.com/tomnomnom/meg
 go get -u github.com/tomnomnom/gf
 go get -u github.com/tomnomnom/unfurl
 go get -u github.com/tomnomnom/anew
+GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
+GO111MODULE=on go get -u -v github.com/lc/gau
+go get github.com/hakluke/hakrawler
+GO111MODULE=on go get -u -v github.com/lc/gau
