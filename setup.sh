@@ -13,3 +13,12 @@ if [[ -z "$GOPATH" ]];then
     source ~/.bash_profile
     sleep 1
 fi
+
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
+GO111MODULE=on go get -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+go get -u github.com/tomnomnom/gron
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/assetfinder
+go get -u github.com/tomnomnom/meg
