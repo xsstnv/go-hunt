@@ -22,3 +22,6 @@ go get -u github.com/tomnomnom/gron
 go get -u github.com/tomnomnom/httprobe
 go get -u github.com/tomnomnom/assetfinder
 go get -u github.com/tomnomnom/meg
+go get -u github.com/tomnomnom/gf
+go get -u github.com/tomnomnom/unfurl
+go get -u github.com/tomnomnom/anew
