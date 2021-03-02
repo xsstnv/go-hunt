@@ -29,3 +29,4 @@ GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
 GO111MODULE=on go get -u -v github.com/lc/gau
 go get github.com/hakluke/hakrawler
 GO111MODULE=on go get -u -v github.com/lc/gau
+GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
