@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [[ -z "$GOPATH" ]];then
+    echo "Installing Go..."
     wget https://dl.google.com/go/go1.16.linux-amd64.tar.gz
     sudo tar -xvf go1.16.linux-amd64.tar.gz
     sudo mv go /usr/local
@@ -11,6 +12,7 @@ if [[ -z "$GOPATH" ]];then
     echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile			
     echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile	
     source ~/.bash_profile
+    echo "Successfully installed Go"
     sleep 1
 fi
 
@@ -32,3 +34,5 @@ go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 go get -u -v github.com/hahwul/dalfox/v2
 go get -u -v github.com/zricethezav/gitleaks/v7
+
+echo "Script execution finished"
