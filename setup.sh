@@ -34,5 +34,7 @@ go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 go get -u -v github.com/hahwul/dalfox/v2
 go get -u -v github.com/zricethezav/gitleaks/v7
+go get -u -v github.com/projectdiscovery/notify/cmd/notify
+go get -u -v github.com/projectdiscovery/notify/cmd/intercept
 
 echo "Script execution finished"
