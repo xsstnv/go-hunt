@@ -1,19 +1,17 @@
 #!/bin/bash
 
-if [[ -z "$GOPATH" ]];then
-    echo "Installing Go..."
-    wget https://dl.google.com/go/go1.16.linux-amd64.tar.gz
-    sudo tar -xvf go1.16.linux-amd64.tar.gz
-    sudo mv go /usr/local
-    export GOROOT=/usr/local/go
-    export GOPATH=$HOME/go
-    export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-    echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
-    echo 'export GOPATH=$HOME/go'	>> ~/.bashrc
-    echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc
-    source ~/.bashrc
-    echo "Successfully installed Go"
-    sleep 1
+if ! [ -x "$(command -v go)" ]; then
+       wget https://golang.org/dl/go1.16.2.linux-amd64.tar.gz
+       sudo tar -C /usr/local -xzf go1.16.2.linux-amd64.tar.gz 
+       mkdir -p "${HOME}/go"
+       export GOROOT=/usr/local/go/
+       export GOPATH=$HOME/go
+       export PATH=$GOPATH/bin:$GOROOT/bin:$PATH    
+       echo "export GOROOT=/usr/local/go/" >> ${HOME}/.bashrc
+       echo "export GOPATH=\$HOME/go" >> ${HOME}/.bashrc
+       echo "export PATH=\$GOPATH/bin:\$GOROOT/bin:\$PATH" >> ${HOME}/.bashrc
+       source ${HOME}/.bashrc
+       sleep 1  
 fi
 
 go get -u -v github.com/tomnomnom/gron
