@@ -14,26 +14,26 @@ if ! [ -x "$(command -v go)" ]; then
        sleep 1  
 fi
 
-go get -u -v github.com/tomnomnom/gron
-go get -u -v github.com/tomnomnom/httprobe
-go get -u -v github.com/tomnomnom/assetfinder
-go get -u -v github.com/tomnomnom/meg
-go get -u -v github.com/tomnomnom/gf
-go get -u -v github.com/tomnomnom/unfurl
-go get -u -v github.com/tomnomnom/anew
-go get -u -v github.com/hakluke/hakrawler
-go get -u -v github.com/lc/gau
+go get -u github.com/tomnomnom/gron
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/assetfinder
+go get -u github.com/tomnomnom/meg
+go get -u github.com/tomnomnom/gf
+go get -u github.com/tomnomnom/unfurl
+go get -u github.com/tomnomnom/anew
+go get -u github.com/hakluke/hakrawler
+go get -u github.com/lc/gau
 
 export GO111MODULE=on
 
-go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
-go get -u -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
-go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
-go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
-go get -u -v github.com/projectdiscovery/chaos-client/cmd/chaos
-go get -u -v github.com/hahwul/dalfox/v2
-go get -u -v github.com/zricethezav/gitleaks/v7
-go get -u -v github.com/projectdiscovery/notify/cmd/notify
-go get -u -v github.com/projectdiscovery/notify/cmd/intercept
+go get -u github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+go get -u github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+go get -u github.com/projectdiscovery/httpx/cmd/httpx
+go get -u github.com/projectdiscovery/shuffledns/cmd/shuffledns
+go get -u github.com/projectdiscovery/chaos-client/cmd/chaos
+go get -u github.com/hahwul/dalfox/v2
+go get -u github.com/zricethezav/gitleaks/v7
+go get -u github.com/projectdiscovery/notify/cmd/notify
+go get -u github.com/projectdiscovery/notify/cmd/intercept
 
 echo "Script execution finished"
